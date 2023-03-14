@@ -5,6 +5,7 @@ body {
 	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 	background-size: cover;
     background-attachment: fixed;
+	overflow: hidden;
 }
 
 
@@ -25,6 +26,11 @@ header {
 	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 1.5rem;
 	text-shadow: 2px 2px 2px gray;
+}
+
+#header-title a{
+	text-decoration: none;
+	color: #ffffff;
 }
 
 nav ul {
@@ -72,6 +78,7 @@ nav a:hover {
 	font-family: 'Rubik', sans-serif;
 	color: white;
 	font-size: 1.8rem;
+	z-index: 1;
 }
 
 @keyframes home-animation {
@@ -116,6 +123,7 @@ nav a:hover {
 	padding: 8px;
 	border-radius: 10px;
 	transition: 0.3s;
+	z-index: 1;
 }
 
 .home-button a:hover {
@@ -125,10 +133,10 @@ nav a:hover {
 }
 
 .waves {
-	animation: waves-animation 1.5s ;
+	animation: waves-animation 1.5s;
+	filter: blur(1px);
 	
 }
-
 
 @keyframes waves-animation {
 	from {
