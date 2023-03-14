@@ -1,8 +1,11 @@
 body {
 	margin: 0;
 	padding: 0;
+    font-family: 'Montserrat', sans-serif;
+	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	background-size: cover;
+    background-attachment: fixed;
 
-	overflow: hidden;
 }
 
 /*----------NAVBAR & ANIMATION----------*/
@@ -19,6 +22,8 @@ header {
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 	background-size: cover;
     background-attachment: fixed;
+	position: sticky;
+	top: 0px;
 }
 
 #header-title {
@@ -66,3 +71,36 @@ nav a:hover {
 	
 }
 /*----------NAVBAR & ANIMATION----------*/
+
+/*----------ABOUT ME----------*/
+.about-me {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	text-align: center;
+	height: 100vh;
+	margin: 2% 12% 12% 12% ;
+	
+	-webkit-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+}
+
+#grid1 {
+	animation: about-me-animation 2s;
+	background-color: red;
+}
+
+#grid2 {
+	animation: about-me-animation 2s;
+	background-color: yellow;
+}
+
+
+@keyframes about-me-animation{
+	from {
+		width: 50%;
+	}
+	to {
+		width: 100%;
+	}
+}

@@ -93,16 +93,17 @@ nav a:hover {
 }
 
 .home-button{
-	font-size: 1.2rem;
 	font-family: 'Rubik', sans-serif;
 	background-color: transparent;
     background-repeat: no-repeat;
 	padding: 8px;
 	border: none;
+	animation: home-button-animation 1s forwards;
+	transition: all 0.3s ease 0s;
 }
 
-.home-button {
-	animation: home-button-animation 1s forwards;
+.home-button:hover{
+	transform: translateY(-7px);
 }
 
 @keyframes home-button-animation {
@@ -115,25 +116,31 @@ nav a:hover {
 }
 
 .home-button a {
-	text-decoration: none;
-	color: white;
-	background-color: transparent;
-    background-repeat: no-repeat;
-	border: 1.5px solid #fff;
-	padding: 8px;
-	border-radius: 10px;
-	transition: 0.3s;
-	z-index: 1;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
 }
 
+
 .home-button a:hover {
-	transition: 0.3s;
-	border: 1.5px solid #0f3347;
-	color: #0f3347;
+	background-color: #004d7a;
+	box-shadow: 0px 15px 20px #008793;
+	color: #fff;
 }
 
 .waves {
-	animation: waves-animation 1.5s;
+	animation: waves-animation 2.5s;
 	filter: blur(1px);
 	
 }
