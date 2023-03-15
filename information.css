@@ -9,8 +9,24 @@ body {
 	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 	background-size: cover;
     background-attachment: fixed;
-	
+	/*----------SCROLL----------*/
+	max-height: 300px; /* Altura máxima del contenedor del scroll */
 }
+
+body::-webkit-scrollbar {
+	width: 6px; /* Ancho del scroll */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: #aaa; /* Color del fondo del scroll */
+	border-radius: 6px; /* Bordes redondeados del scroll */
+  }
+  
+  body::-webkit-scrollbar-track {
+	background-color: #fff; /* Color del fondo del track del scroll */
+  }
+/*----------SCROLL----------*/
+
 /*----------NAVBAR & ANIMATION----------*/
 header {
 	opacity: 1;
@@ -107,6 +123,7 @@ nav a:hover {
 	text-align: left;
 	font-size: 65px;
 	font-family: 'Montserrat', sans-serif;
+	font-variant: small-caps;
 }
 
 #grid2 {
@@ -132,3 +149,15 @@ nav a:hover {
 		transform: translateX(1px);
 	}
 }
+
+/*----------FOOTER----------*/
+footer {
+	color: #fff; /* color de texto del footer */
+	padding: 15px; /* espacio de relleno interno del footer */
+	font-size: 14px; /* tamaño de fuente del footer */
+	text-align: center; /* alineación del contenido del footer */
+	left: 0; /* distancia desde el borde izquierdo de la pantalla */
+	bottom: 0; /* distancia desde el borde inferior de la pantalla */
+	font-family: 'Montserrat', sans-serif;
+}
+/*----------FOOTER----------*/
