@@ -5,9 +5,8 @@ body {
 	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 	background-size: cover;
     background-attachment: fixed;
-	overflow: hidden;
+	height: 100vh;
 }
-
 
 /*----------NAVBAR & ANIMATION----------*/
 header {
@@ -157,7 +156,20 @@ nav a:hover {
 /*----------HOME----------*/
 
 
+footer {
 
+
+	color: #fff; /* color de texto del footer */
+	padding: 15px; /* espacio de relleno interno del footer */
+	font-size: 14px; /* tamaño de fuente del footer */
+	text-align: center; /* alineación del contenido del footer */
+	left: 0; /* distancia desde el borde izquierdo de la pantalla */
+	bottom: 0; /* distancia desde el borde inferior de la pantalla */
+	width: 100%; /* ancho del footer */
+	font-family: 'Montserrat', sans-serif;
+	
+  }
+  
 /*
 main {
 	padding: 3.125rem;
