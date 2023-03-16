@@ -139,8 +139,9 @@ nav a:hover {
 .about-me-description{
 	font-family: 'Montserrat', sans-serif;
 	text-align: justify;
-	padding: 50px;
+	padding: 7px 100px;
 	font-size: 20px;
+	background-color: red;
 }
 
 #grid2 {
@@ -170,7 +171,7 @@ nav a:hover {
 
 .buttons {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: 50% auto auto auto;
 	text-align: center;
 	align-items: center;
 }
@@ -191,7 +192,7 @@ nav a:hover {
 	border: none;
 	animation: home-button-animation 1s forwards;
 	transition: all 0.3s ease 0s;
-	margin: 50px;
+	white-space: nowrap;
 }
 
 .cv-button:hover{
