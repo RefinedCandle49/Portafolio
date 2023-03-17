@@ -104,27 +104,19 @@ nav a:hover {
 	box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
 	animation: about-me-shadow 2s forwards;
 }
-
-@keyframes about-me-shadow{
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
+/*----------Card1----------*/
 #grid1 {
 	animation: about-me-animation1 2s forwards;
 	font-family: 'Rubik', sans-serif;
 	font-size:xx-large;
-	background-image: linear-gradient(to right bottom, #8262b3, #8360ba, #845ec1, #855cc8, #865acf);
+	/*background-image: linear-gradient(to right bottom, #8262b3, #8360ba, #845ec1, #855cc8, #865acf);*/
+	background-color:#004d7a48;
 	color: white;
 }
 
 .about-me-title {
 	line-height: 15px;
-	padding: 20px 90px;
+	padding: 0px 90px;
 	text-align: left;
 	font-size: 65px;
 	font-family: 'Montserrat', sans-serif;
@@ -141,47 +133,14 @@ nav a:hover {
 	text-align: justify;
 	padding: 7px 100px;
 	font-size: 20px;
-	background-color: red;
 }
 
-#grid2 {
-	animation: about-me-animation2 2s forwards;
-	font-size:xx-large;
-	background-color: #f5f5f5;
-}
-
-
-@keyframes about-me-animation1{
-	from {
-		transform: translateX(-120px);
-	}
-	to {
-		transform: translateX(1px);
-	}
-}
-
-@keyframes about-me-animation2{
-	from {
-		transform: translateX(120px);
-	}
-	to {
-		transform: translateX(1px);
-	}
-}
-
+/*----------Card1-buttons----------*/
 .buttons {
 	display: grid;
 	grid-template-columns: 50% auto auto auto;
 	text-align: center;
 	align-items: center;
-}
-
-#grid-button1 {
-	
-}
-
-#grid-button2, #grid-button3, #grid-button4 {
-	
 }
 
 .cv-button{
@@ -192,7 +151,11 @@ nav a:hover {
 	border: none;
 	animation: home-button-animation 1s forwards;
 	transition: all 0.3s ease 0s;
+	width: 160px;
+	margin: auto;
 	white-space: nowrap;
+
+	
 }
 
 .cv-button:hover{
@@ -200,8 +163,8 @@ nav a:hover {
 }
 
 .cv-button a:hover {
-	background-color: #004d7a;
-	box-shadow: 0px 1px 15px #004d7a;
+	background-color: #6C66A5;
+	box-shadow: 0px 1px 15px #6C66A5;
 	color: #fff;
 }
 
@@ -222,30 +185,69 @@ nav a:hover {
   text-decoration: none;
 }
 
-.links-button1 img{
+.links-button1 img, .links-button3 img{
 	width: 45px;
 }
 
 .links-button2 img{
 	width: 50px;
 }
+/*----------Card1-buttons----------*/
+/*----------Card1----------*/
 
-.links-button3 img{
-	width: 45px;
+
+/*----------Card2----------*/
+#grid2 {
+	animation: about-me-animation2 2s forwards;
+	font-size:xx-large;
+	background-color: #f5f5f5;
 }
 
-
-/*----------FOOTER----------*/
-footer {
-	color: #fff; /* color de texto del footer */
-	padding: 15px; /* espacio de relleno interno del footer */
-	font-size: 14px; /* tamaño de fuente del footer */
-	text-align: center; /* alineación del contenido del footer */
-	left: 0; /* distancia desde el borde izquierdo de la pantalla */
-	bottom: 0; /* distancia desde el borde inferior de la pantalla */
-	font-family: 'Montserrat', sans-serif;
+.skills-grid{
+	display: grid;
+	grid-template-columns: auto auto;
+	
+	text-align: center;
+	margin: auto;
 }
-/*----------FOOTER----------*/
+
+.skill-icon img{
+	width: 150px;
+	padding-bottom: 30px;
+}
+/*----------Card2----------*/
+
+
+/*----------Animations----------*/
+@keyframes about-me-shadow{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes about-me-animation1{
+	from {
+		transform: translateX(-120px);
+	}
+	to {
+		transform: translateX(1px);
+	}
+}
+
+@keyframes about-me-animation2{
+	from {
+		transform: translateX(120px);
+	}
+	to {
+		transform: translateX(1px);
+	}
+}
+/*----------Animations----------*/
+
+/*----------ABOUT ME----------*/
 
 
 /*----------TOOLTIP----------*/
@@ -270,7 +272,7 @@ footer {
 	left: 50%;
 	margin-left: -60px;
 	opacity: 0;
-	transition: opacity 0.3s;
+	transition: opacity 0.6s;
   }
   
   .tooltip .tooltiptext::after {
@@ -289,3 +291,19 @@ footer {
 	opacity: 1;
   }
   /*----------TOOLTIP----------*/
+
+
+
+/*----------FOOTER----------*/
+footer {
+	color: #fff; /* color de texto del footer */
+	padding: 15px; /* espacio de relleno interno del footer */
+	font-size: 14px; /* tamaño de fuente del footer */
+	text-align: center; /* alineación del contenido del footer */
+	left: 0; /* distancia desde el borde izquierdo de la pantalla */
+	bottom: 0; /* distancia desde el borde inferior de la pantalla */
+	font-family: 'Montserrat', sans-serif;
+}
+/*----------FOOTER----------*/
+
+

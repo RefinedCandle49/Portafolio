@@ -115,6 +115,8 @@ nav a:hover {
 	border: none;
 	animation: home-button-animation 1s forwards;
 	transition: all 0.3s ease 0s;
+	width: 140px;
+	margin: auto;
 }
 
 .home-button:hover{
