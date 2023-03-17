@@ -213,7 +213,7 @@ nav a:hover {
 
 .skill-icon img{
 	width: 150px;
-	padding-bottom: 30px;
+	margin-bottom: 40px;
 }
 /*----------Card2----------*/
 
@@ -290,6 +290,40 @@ nav a:hover {
 	visibility: visible;
 	opacity: 1;
   }
+
+
+.tooltip .tooltiptext1 {
+	visibility: hidden;
+	width: 120px;
+	background-color: #004d7ace;
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 105%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+
+.tooltip .tooltiptext1::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #004d7ace transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext1 {
+	visibility: visible;
+	opacity: 1;
+}
   /*----------TOOLTIP----------*/
 
 
