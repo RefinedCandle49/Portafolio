@@ -98,7 +98,7 @@ nav a:hover {
 	grid-template-columns: 50% 50%;
 	text-align: center;
 	height: 100vh;
-	margin: 2% 12% 12% 12%;
+	margin: 2% 12% 0% 12%;
 	-webkit-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
 	box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
@@ -223,6 +223,10 @@ nav a:hover {
 	margin-bottom: 0px;
 }
 
+#skill-icon5{
+	width: 160px;
+}
+
 /*----------Card2----------*/
 
 
@@ -257,6 +261,57 @@ nav a:hover {
 
 /*----------ABOUT ME----------*/
 
+/*----------PROJECTS----------*/
+
+.projects{
+	padding-top: 80px;
+	margin-top: 80px;
+	background-color: white;
+}
+.projects-title{
+	background-color: #f5f5f5;
+	text-align: center;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 50px;
+	
+}
+
+.projects-grid{
+	text-align: center;
+	color: black;
+	
+}
+
+.projects-grid > div {
+	
+
+	
+}
+
+.grid-project-right{
+	display: grid;
+	grid-template-columns: 30% 70%;
+	
+}
+
+
+.grid-project-right img, .grid-project-left img{
+	width: 100%;
+	-webkit-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+}
+
+.grid-project-left{
+	display: grid;
+	grid-template-columns: 70% 30%;
+	
+}
+
+/*----------PROJECTS----------*/
 
 /*----------TOOLTIP----------*/
 .tooltip {
@@ -347,5 +402,3 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 }
 /*----------FOOTER----------*/
-
-
