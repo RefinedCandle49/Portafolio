@@ -115,7 +115,6 @@ nav a:hover {
 	border: none;
 	animation: home-button-animation 1s forwards;
 	transition: all 0.3s ease 0s;
-	width: 140px;
 	margin: auto;
 }
 
@@ -184,3 +183,43 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 }
 /*----------FOOTER----------*/
+
+.square {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 300px;
+	border-radius: 25px;
+	border: 2px solid white;
+	background: none;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 25px;
+	align-items: center;
+	z-index: 1;
+}
+
+.square p{
+	margin: 90px 15px 15px 15px;
+}
+
+.waves-sucess {
+	animation: waves-sucess-animation 2.5s;
+	filter: blur(1px);
+	margin-top: 350px;
+	z-index: -1;
+}
+
+@keyframes waves-sucess-animation {
+	from {
+		opacity:0.6;
+
+	}
+	to {
+		opacity:1;
+	}
+}

@@ -482,6 +482,7 @@ nav a:hover {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
 	
 }
 
@@ -489,7 +490,7 @@ nav a:hover {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	align-items: center;
-	height: 40vh;
+	height: 50vh;
 	padding: 50px;
 	padding-left: 400px;
 	padding-right: 400px;
