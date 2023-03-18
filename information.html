@@ -255,20 +255,57 @@
 		<div class="projects-title">
 			<h1>Contacto</h1>
 		</div>
-		<form name="contact" action="/" method="POST" data-netlify="true">
-				<label>Nombre: <input type="text" name="name" /></label>
-				<label>Correo: <input type="email" name="email" /></label>
-				<label>Asunto: <input type="text" name="asunto" /></label>
-				<label>Mensaje: <textarea name="message" placeholder="Escribe tu mensaje aquí"></textarea></label>
-				<button type="submit">Enviar</button>
-		</form>
-
-		  
+		<div class="contact-grid">
+			
+			<div class="contact-information">
+			
+				<h1>Contáctame:</h1>
+				<p>valdezvargaskevin@gmail.com</p>
+				<p>Teléfono: +51919513162</p>
+				<p>Lima, Perú</p>
+				<div class="contact-buttons">
+					<div id="grid-contact-button1">
+						<div class="links-contact-button1">
+							<a href="" class="tooltip-contact">
+								<span class="tooltiptext-contact">Enlace a Linkedin</span>
+								<img src="icons/linkedin.svg" alt="linkedin icon">
+							</a>
+						</div>
+					</div>
+					<div id="grid-contact-button2">
+						<div class="links-contact-button2">
+							<a href="" class="tooltip-contact">
+								<span class="tooltiptext-contact">Enlace a Github </span>
+								<img src="icons/github.svg" alt="github icon">
+							</a>
+						</div>
+					</div>
+					<div id="grid-contact-button3">
+						<div class="links-contact-button3">
+							<a href="mailto:valdezvargaskevin@gmail.com" class="tooltip-contact">
+								<span class="tooltiptext-contact">Mandar un correo</span>
+								<img src="icons/gmail.svg" alt="github icon">
+							</a>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<div class="form">
+				<form name="contact" action="/" method="POST" data-netlify="true">
+					<label>Nombre: <input type="text" name="name" /></label>
+					<label>Correo: <input type="email" name="email" /></label>
+					<label>Asunto: <input type="text" name="asunto" /></label>
+					<label>Mensaje: <textarea name="message" placeholder="Escribe tu mensaje aquí"></textarea></label>
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+		</div>
 	</div>
-
-
+	
 	<footer>
 		<p>© 2023 Kevin Valdez. Todos los derechos reservados.</p>
 	</footer>
+	
 </body>
 </html>
