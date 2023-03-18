@@ -264,7 +264,7 @@ nav a:hover {
 .projects{
 	padding-top: 80px;
 	margin-top: 80px;
-	background-color: white;
+	
 }
 
 .projects-title{
@@ -296,10 +296,12 @@ nav a:hover {
 /*PROJECT IMAGES*/
 .grid-project-right img, .grid-project-left img{
 	width: 100%;
-	-webkit-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
-	box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+}
 
+.grid-project-right div > img, .grid-project-left div > img {
+	-webkit-box-shadow: 0px 2px 20px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 20px 10px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 20px 10px rgba(0,0,0,0.2);
 }
 
 .projects-grid{
