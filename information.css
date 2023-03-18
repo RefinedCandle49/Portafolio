@@ -154,8 +154,6 @@ nav a:hover {
 	width: 160px;
 	margin: auto;
 	white-space: nowrap;
-
-	
 }
 
 .cv-button:hover{
@@ -268,6 +266,7 @@ nav a:hover {
 	margin-top: 80px;
 	background-color: white;
 }
+
 .projects-title{
 	background-color: #f5f5f5;
 	text-align: center;
@@ -276,40 +275,82 @@ nav a:hover {
 	text-transform: uppercase;
 	font-size: 20px;
 	margin-bottom: 50px;
-	
-}
-
-.projects-grid{
-	text-align: center;
 	color: black;
-	
 }
-
-.projects-grid > div {
-	
-
-	
-}
-
 .grid-project-right{
 	display: grid;
 	grid-template-columns: 30% 70%;
-	
-}
-
-
-.grid-project-right img, .grid-project-left img{
-	width: 100%;
-	-webkit-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
-	box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+	background-color: #f5f5f5;
+	text-align: left;
+	align-items: center;
 }
 
 .grid-project-left{
 	display: grid;
 	grid-template-columns: 70% 30%;
-	
+	background-color: #f5f5f5;
+	text-align: left;
+	align-items: center;
 }
+
+/*PROJECT IMAGES*/
+.grid-project-right img, .grid-project-left img{
+	width: 100%;
+	-webkit-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 23px 6px rgba(0,0,0,0.2);
+
+}
+
+.projects-grid{
+	text-align: center;
+	color: black;
+}
+
+.grid-project-description{
+	margin: 45px;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+/*----------Project buttons----------*/
+.project-links{
+	display: flex;
+}
+
+.tooltip-project img{
+	width: 60px;
+}
+
+.tooltip-project a{
+	margin: auto;
+	text-align: center;
+}
+
+/*----------Project buttons----------*/
+
+
+
+/*----------Project tags----------*/
+.tags {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+
+.tags p{
+	border: solid rgba(0, 0, 0, 0.582) 2px;
+	margin: 10px;
+	border-radius: 15px;
+	padding: 5px;
+	background-color: #004d7a;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+}
+/*----------Project tags----------*/
+
 
 /*----------PROJECTS----------*/
 
@@ -389,6 +430,45 @@ nav a:hover {
 }
   /*----------TOOLTIP----------*/
 
+  .tooltip-project {
+	position: relative;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+  }
+
+  .tooltip-project .tooltiptext-project {
+	visibility: hidden;
+	width: 120px;
+	background-color: #004d7a;
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.6s;
+  }
+  
+  .tooltip-project .tooltiptext-project::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #004d7a transparent transparent transparent;
+  }
+  
+  .tooltip-project:hover .tooltiptext-project {
+	visibility: visible;
+	opacity: 1;
+  }
 
 
 /*----------FOOTER----------*/
