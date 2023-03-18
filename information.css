@@ -300,7 +300,10 @@ nav a:hover {
 .projects-grid{
 	text-align: center;
 	color: black;
-	
+}
+
+.projects-grid-mobile {
+	display: none;
 }
 
 .projects-grid > div{
@@ -650,6 +653,11 @@ footer {
 		margin-top: 0;
 	}
 
+	.skill-icon img{
+		width: 180px;
+		margin-bottom: 60px;
+	}
+
 	#grid2 h1{
 		margin-bottom: 10px;
 	}
@@ -669,4 +677,76 @@ footer {
 		margin-bottom: 0px;
 	}
 }
+
+@media (max-width: 1080px) {
+	.about-me {
+		display: grid;
+		grid-template-columns: auto;
+		height: 100vh;
+	}
+
+	.about-me-title {
+		text-align: center;
+	}
+
+	.buttons {
+		display: grid;
+		grid-template-columns: 40% auto auto auto;
+		text-align: center;
+		align-items: center;
+	}
+	.grid-project-right, .grid-project-left{
+		grid-template-columns: auto;
+		border: solid black 1px;
+
+	}
+	.projects-grid {
+		display: none;
+		
+	  }
+	
+	.projects-grid-mobile{
+		display: grid;
+		grid-template-columns: auto;
+		color: white;
+		text-align: left;
+		align-items: center;
+		margin-left: 130px;
+		margin-right: 130px;
+		
+		
+	}
+
+	.grid-project-description {
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0;
+		padding-left: 25px;
+		padding-right: 25px;
+		
+	}
+	.grid-project-mobile div > img{
+		width: 100%;
+	}
+
+	.grid-project-mobile{
+		border: rgba(0, 0, 0, 0.267) solid 2px;
+		margin-bottom: 35px;
+	}
+
+	.contact-grid{
+		display: contents;
+		
+	}
+
+	.contact-information {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.contact-information h1{
+		display: none;
+	}
+}	
+
 /*----------RESPONSIVE----------*/
