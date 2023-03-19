@@ -109,7 +109,6 @@ nav a:hover {
 	animation: about-me-animation1 2s forwards;
 	font-family: 'Rubik', sans-serif;
 	font-size:xx-large;
-	/*background-image: linear-gradient(to right bottom, #8262b3, #8360ba, #845ec1, #855cc8, #865acf);*/
 	background-color:#004d7a48;
 	color: white;
 }
@@ -236,7 +235,7 @@ nav a:hover {
 		transform: translateX(-120px);
 	}
 	to {
-		transform: translateX(1px);
+		transform: translateX(0px);
 	}
 }
 
@@ -245,7 +244,7 @@ nav a:hover {
 		transform: translateX(120px);
 	}
 	to {
-		transform: translateX(1px);
+		transform: translateX(-1px);
 	}
 }
 /*----------Animations----------*/
@@ -607,10 +606,13 @@ footer {
 }
 
 /*----------RESPONSIVE----------*/
+header > input {
+	display: none;
+}
+
 @media (max-width: 1700px) {
 	.about-me{
 		height: auto;
-		
 	}
 
 	.about-me-description{
@@ -682,7 +684,7 @@ footer {
 	.about-me {
 		display: grid;
 		grid-template-columns: auto;
-		height: 100vh;
+		
 	}
 
 	.about-me-title {
@@ -748,5 +750,214 @@ footer {
 		display: none;
 	}
 }	
+@media (max-width: 790px) {
+/* Estilo para el checkbox */
+
+	.cv-button {
+		width: 200px;
+	}
+
+	header {
+		padding: 0 50px;
+	}
+
+	#menu-toggle {
+	display: none;
+	}
+	
+	/* Estilo para la etiqueta del checkbox */
+	#menu-toggle-label {
+	display: none;
+	cursor: pointer;
+	padding: 0px;
+	}
+	
+	/* Estilo para el ícono de hamburguesa */
+	#menu-toggle-label span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	
+	background-color: #fff;
+	}
+	
+	/* Estilo para mostrar el menú cuando el checkbox está seleccionado */
+	#menu-toggle:checked ~ nav ul {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 60px;
+	left: 0;
+	right: 0;
+	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	background-size: cover;
+    background-attachment: fixed;
+	padding: 0 0 20px 5%;
+	margin: 0;
+
+	}
+	
+	/* Estilo para ocultar el menú cuando el checkbox no está seleccionado */
+	#menu-toggle:not(:checked) ~ nav ul {
+	display: none;
+	}
+	
+	/* Estilo para los ítems del menú */
+	nav li {
+		margin: 10px 0;
+	}
+	
+	/* Estilo para el link de los ítems del menú */
+
+	nav li {
+		margin: -0.5rem 1.2rem 0 0;
+		transition: 0.5s;
+		padding: 2px 0 0 0;
+		height: 0px;
+		text-transform: uppercase;
+		width: 100px;
+	}
+	
+	nav li:hover {
+		transition: 0.5s;
+		background-color: #004d7a;
+		padding-top: 3px;
+		width: 100px;
+	}
+
+	
+	nav a:hover {
+		color: #004d7a;
+		
+	}
+
+	.projects-grid-mobile{
+		margin-left: 8%;
+		margin-right: 8%;
+	}
+
+}
+	/* Mostrar la etiqueta del checkbox solo en dispositivos móviles */
+	@media screen and (max-width: 790px) {
+	#menu-toggle-label {
+	display: block;
+	}
+	nav ul {
+		display: none;
+	}
+	nav li {
+		margin: 10px 0;
+	}
+	
+}
+@media (max-width: 702px){
+	.waves svg{
+		margin-top: 50px;
+	}
+}
+@media (max-width: 687px){
+
+	.about-me{
+		margin: 5px;
+	}
+
+	body{
+		margin: 0px;
+	}
+	
+}
+
+
+
+@media (max-width: 520px){
+	body{
+		margin: 0px;
+	}
+
+	
+}
+
+@media (max-width: 514px){
+
+	.about-me{
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	#grid1 {
+		animation: none;
+		margin: 0;
+		padding: 0;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		margin-bottom: 40px;
+		background-color: #004d7a00;
+	}
+
+	#grid2 {
+		animation: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	#grid2 h1{
+		font-size: 45px;
+	}
+
+	.about-me-title {
+		font-size: x-large;
+	}
+
+	.projects-grid-mobile{
+		margin: 0;
+	}
+
+	.buttons{
+		grid-template-columns: auto auto;
+	}
+
+	.skill-icon img{
+		width: 100px;
+		margin-bottom: 60px;
+	}
+
+	form{
+		padding: 15px;
+	}
+
+	.about-me-description{
+		font-size: 15px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.about-me-description p{
+		margin: 10px;
+	}
+
+	.buttons {
+		width: 50px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+	  width: 90%;
+	}
+	
+	.projects{
+		padding-top: 50px;
+		margin-top: 80px;
+	}
+}
+
+@media (max-width: 514px){
+	header{
+		margin: auto;
+	}
+
+}
 
 /*----------RESPONSIVE----------*/

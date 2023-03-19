@@ -224,9 +224,147 @@ footer {
 	}
 }
 /*----------RESPONSIVE----------*/
+header > input {
+	display: none;
+}
+
+
 @media (max-width: 1080px) {
 	.waves{
 		margin-top: 1000px;
 	}
 }
 /*----------RESPONSIVE----------*/
+
+@media (max-width: 790px) {
+/* Estilo para el checkbox */
+
+	.cv-button {
+		width: 200px;
+	}
+
+	header {
+		padding: 0 50px;
+	}
+
+	#menu-toggle {
+	display: none;
+	}
+	
+	/* Estilo para la etiqueta del checkbox */
+	#menu-toggle-label {
+	display: none;
+	cursor: pointer;
+	padding: 0px;
+	}
+	
+	/* Estilo para el ícono de hamburguesa */
+	#menu-toggle-label span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	
+	background-color: #fff;
+	}
+	
+	/* Estilo para mostrar el menú cuando el checkbox está seleccionado */
+	#menu-toggle:checked ~ nav ul {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 60px;
+	left: 0;
+	right: 0;
+	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	background-size: cover;
+    background-attachment: fixed;
+	padding: 0 0 20px 5%;
+	margin: 0;
+
+	}
+	
+	/* Estilo para ocultar el menú cuando el checkbox no está seleccionado */
+	#menu-toggle:not(:checked) ~ nav ul {
+	display: none;
+	}
+	
+	/* Estilo para los ítems del menú */
+	nav li {
+		margin: 10px 0;
+	}
+	
+	/* Estilo para el link de los ítems del menú */
+
+	nav li {
+		margin: -0.5rem 1.2rem 0 0;
+		transition: 0.5s;
+		padding: 2px 0 0 0;
+		height: 0px;
+		text-transform: uppercase;
+		width: 100px;
+	}
+	
+	nav li:hover {
+		transition: 0.5s;
+		background-color: #004d7a;
+		padding-top: 3px;
+		width: 100px;
+	}
+
+	
+	nav a:hover {
+		color: #004d7a;
+		
+	}
+
+	.projects-grid-mobile{
+		margin-left: 8%;
+		margin-right: 8%;
+	}
+
+}
+	/* Mostrar la etiqueta del checkbox solo en dispositivos móviles */
+	@media screen and (max-width: 790px) {
+	#menu-toggle-label {
+	display: block;
+	}
+	nav ul {
+		display: none;
+	}
+	nav li {
+		margin: 10px 0;
+	}
+	
+}
+@media (max-width: 1080px){
+	.waves-sucess {
+		margin-top: 1300px;
+	}
+}
+
+@media (max-width: 702px){
+	.home{
+		font-size: 15px;
+		
+	}
+
+	.home-button a {
+	  font-size: 10px;
+	}
+
+	.square {
+		position: absolute;
+		top: 280px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 350px;
+		height: 300px;
+		border-radius: 25px;
+		border: 2px solid white;
+	}
+
+	.waves-sucess {
+		margin-top: 700px;
+	}
+}
